@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "start:dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production node server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.2.0",
+    "express-validator": "^6.14.0",
     "mongoose": "^6.0.13",
     "morgan": "^1.10.0",
     "slugify": "^1.6.3"
