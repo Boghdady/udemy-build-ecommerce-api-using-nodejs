@@ -62,14 +62,26 @@ const productSchema = new mongoose.Schema(
       type: Number,
       min: [1, 'Rating must be above or equal 1.0'],
       max: [5, 'Rating must be below or equal 5.0'],
+      // set: (val) => Math.round(val * 10) / 10, // 3.3333 * 10 => 33.333 => 33 => 3.3
     },
     ratingsQuantity: {
       type: Number,
       default: 0,
     },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+    // to enable virtual populate
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
+  }
 );
+
+productSchema.virtual('reviews', {
+  ref: 'Review',
+  foreignField: 'product',
+  localField: '_id',
+});
 
 // Mongoose query middleware
 productSchema.pre(/^find/, function (next) {
