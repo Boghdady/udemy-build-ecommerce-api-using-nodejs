@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon server.js",
-    "start:prod": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js"
   },
   "keywords": [],
   "author": "",
@@ -40,5 +40,8 @@
     "eslint-plugin-react": "^7.28.0",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1"
+  },
+  "engines": {
+    "node": "^16.13.0"
   }
 }
