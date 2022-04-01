@@ -1,6 +1,6 @@
 # Course Material and FAQ for my NodeJS - Build a Full E-Commerce RESTful APIs (بالعربي) 
 
-This repo contains every course section in  branche  and the finished project files for all the projects contained in the master branch
+This repo contains every course section in a single branch  and the finished project files for all the projects contained in the master branch
 
 Choose the section branch that you study, and **final code to compare it with your own code whenever something doesn't work**!
 
