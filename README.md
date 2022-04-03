@@ -4,6 +4,8 @@ This repo contains every course section in a single branch  and the finished pro
 
 Choose the section branch that you study, and **final code to compare it with your own code whenever something doesn't work**!
 
+## Join To Discord Channel For Updates [discord](https://discord.gg/e2nwBNU2q9) 
+
 
 👇 **_Please read the following Frequently Asked Questions (FAQ) carefully before starting the course_** 👇
 
