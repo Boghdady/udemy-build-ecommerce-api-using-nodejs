@@ -6,7 +6,7 @@ class ApiFeatures {
 
   filter() {
     const queryStringObj = { ...this.queryString };
-    const excludesFields = ['page', 'sort', 'limit', 'fields'];
+    const excludesFields = ['page', 'sort', 'limit', 'fields', 'keyword'];
     excludesFields.forEach((field) => delete queryStringObj[field]);
     // Apply filtration using [gte, gt, lte, lt]
     let queryStr = JSON.stringify(queryStringObj);
